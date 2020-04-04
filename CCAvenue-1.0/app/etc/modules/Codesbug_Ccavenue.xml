@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Codesbug_Ccavenue>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Codesbug_Ccavenue>
+    </modules>
+</config>

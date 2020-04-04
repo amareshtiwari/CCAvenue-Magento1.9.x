@@ -1,0 +1,16 @@
+<?php
+$data = Mage::registry('ccavenueformdata');
+$tid = $data['tid'];
+$encrypted_data = $data['encRequest'];
+$access_code = $data['access_code'];
+?>
+<form method="POST" name="ccavenue" action="<?php echo Mage::getStoreConfig('payment/ccavenue/gateway_url') ?>">
+    <?php
+echo "<input type=hidden name=tid value=$tid readonly>";
+echo "<input type=hidden name=encRequest value=$encrypted_data>";
+echo "<input type=hidden name=access_code value=$access_code>";
+?>
+</form><?php ?>
+<script type="text/javascript">
+    document.ccavenue.submit();
+</script>
